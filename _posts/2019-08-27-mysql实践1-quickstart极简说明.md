@@ -107,6 +107,10 @@ CALL proc_initData();
 ```
 date && mysqldump -uroot --p123456 db1 > db1.sql && date
 ```
+[mysql mysqldump只导出表结构或只导出数据的实现方法](https://www.jianshu.com/p/18c179e86cf5)
+参数：
+- --opt 导出表结构
+- -t 导出数据
 # 恢复数据
 到db2,先创建db2
 ```
