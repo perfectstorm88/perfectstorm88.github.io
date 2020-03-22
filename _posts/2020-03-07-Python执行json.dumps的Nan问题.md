@@ -14,7 +14,7 @@ python用json转的字符串，因为存在NaN导致web前端无法解析。
 
 但若普通list中已经存在np.NaN,则上述都无法生效。只能采用比较low字符串替换方法如：
 ```
-json.dumps(obj).replace(', NaN',', 0')
+json.dumps(obj).replace(', NaN',', 0').replace('NaN, ','0, ')
 ```
 
 # 测试代码
