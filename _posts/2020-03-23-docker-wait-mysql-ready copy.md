@@ -23,7 +23,10 @@ mysql:
   ports:
     - "3366:3306"
     - "3306:3306"
-  command: --default-authentication-plugin=mysql_native_password
+  command: 
+    --default-authentication-plugin=mysql_native_password
+    --lower_case_table_names=1
+
   restart: always
   environment:
     MYSQL_ROOT_PASSWORD: Aa123456
