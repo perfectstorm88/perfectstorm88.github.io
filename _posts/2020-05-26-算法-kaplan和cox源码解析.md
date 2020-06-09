@@ -26,7 +26,6 @@ categories: 算法
 
 ## 生存概率(Survival probability)
 生存概率也叫作生存方程S(t)=Pr(T>t)，生存方程指的是实例出现感兴趣的事件的时间 T不小于给定的时间t的概率
-
 # 先从kaplan-Meier算法开始
 Kaplan-Meier 方法是一种非参数方法，根据观察到的生存时间估算生存概率（Kaplan和Meier，1958年），ti时刻的生存概率S（ti）计算如下：
 ```
@@ -100,5 +99,13 @@ ci_labels = ["%s_lower_%g" % (self._label, 1 - alpha), "%s_upper_%g" % (self._la
 df[ci_labels[0]] = np.exp(-np.exp(np.log(-v) - z * np.sqrt(cumulative_sq_) / v))
 df[ci_labels[1]] = np.exp(-np.exp(np.log(-v) + z * np.sqrt(cumulative_sq_) / v))
 ```
+风险概率(hazard probability)
+风险概率指的是在时间ttt之前还没有发生任何事件的情况下，在时间ttt发生感兴趣的时间的概率。
+$$\lim_{\delta(t)\rightarrow0}\frac{Pr(t\leq T\leq t+\delta(t)|T\geq t)}{\delta(t)}$$
 
+ 累积风险（cummulative hazard）
+在针对单因子进行生存分析时，我们已经得到了生存方程S(t)S(t)S(t)，那么，根据S(t)S(t)S(t)，累积风险为：
+```
+H(t)=−log(S(t))
+```
 # cox模型
