@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: ./
+url: 
 date_format: "ordinal"
 title: 太极与编程
 subtitle: "人生很长,慢慢经历"
