@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: 算法
+categories: 算法 医学
 ---
 
 

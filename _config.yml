@@ -2,9 +2,9 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: http://blog.lichangzhen.top/
+url: ./
 date_format: "ordinal"
-title: 程序猿的不老泉
+title: 太极与编程
 subtitle: "人生很长,慢慢经历"
 description: "老骥(jì)伏枥(lì)，志在千里"
 keywords: 随手记, perfectstorm
@@ -16,10 +16,10 @@ encoding: "utf-8"
 #      Author      #
 # ---------------- #
 author: perfectstorm88
-organization: 每天2遍八段锦，代码撸到88！
+organization: 太极与编程，两者皆爱好；前者来养生，后者去糊口；若想常青在，每日勤练习；一两遍套路，百十行代码。
 organization_url: 
-github_username: perfectstorm88
-location: Shanghai, China
+github_username: 
+location: 
 email: perfectstorm88@163.com
 
 # ---------------- #
