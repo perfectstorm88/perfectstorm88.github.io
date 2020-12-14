@@ -62,7 +62,7 @@ markdown: kramdown
 kramdown:
     input: GFM
 highlighter: rouge
-paginate: 10 # 分页功能
+paginate: 15 # 分页功能
 lsi: false
 quiet: false
 excerpt_separator: "\n\n"
