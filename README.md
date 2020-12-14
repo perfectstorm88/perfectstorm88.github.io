@@ -5,7 +5,7 @@ fork from https://github.com/mzlogin/mzlogin.github.io
 
 启动方式:
 ```
-bundle exec jekyll serve
+export SSL_CERT_FILE=~/Downloads/cacert.pem && bundle exec jekyll serve
 ```
 
 # 启动问题：

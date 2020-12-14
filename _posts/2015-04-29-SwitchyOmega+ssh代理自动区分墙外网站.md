@@ -54,7 +54,7 @@ ssh -qTfnN -D 2022 -i ~/remote_login/pem/amazon_free_li.pem root@52.68.78.183
 
 ## 3.3 导入配置
 在导入导出页面点击“从备份文件恢复”
-[外链图片转存失败(img-xe5JtJNm-1564411199442)(https://github.com/FelisCatus/SwitchyOmega/wiki/images/t1/step2.png)]
+![](https://github.com/FelisCatus/SwitchyOmega/wiki/images/t1/step2.png)
 导入下面内容(拷贝粘帖到文件再导入)
 ```json
 {
@@ -134,9 +134,9 @@ ssh -qTfnN -D 2022 -i ~/remote_login/pem/amazon_free_li.pem root@52.68.78.183
 
 ### 3.4 更新规则列表
 设置代理服务器，就是本地的ssh代理127.0.0.1:2022,这个本地的ssh代理与远端的VPS建立一个加密隧道。
-[外链图片转存失败(img-zNDAwIw2-1564411199452)(https://github.com/FelisCatus/SwitchyOmega/wiki/images/t1/step3.png)]
+![](https://github.com/FelisCatus/SwitchyOmega/wiki/images/t1/step3.png)
 自动更新规则列表，如果自动更新失败，检查下本地的ssh代理和远端的VPS是否ok
-[外链图片转存失败(img-bg8VVHuT-1564411199453)(https://github.com/FelisCatus/SwitchyOmega/wiki/images/t1/step5.png)]
+![](https://github.com/FelisCatus/SwitchyOmega/wiki/images/t1/step5.png)
 
 # 4. 参考资料
 [各平台 SSH 免费客户端 SSH代理客户端](http://blog.csdn.net/bbplayers/article/details/6853252)
