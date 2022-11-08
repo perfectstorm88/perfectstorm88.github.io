@@ -3,7 +3,7 @@ layout: post
 categories: Linux 系统管理 gitlab
 ---
 
-gitlab-runner真是个好东西，尤其是shell runner,喜欢的不要不要的，什么脏活累活，自动化任务都可以交给它。
+gitlab-runner真是个好东西，尤其是shell runner,非常好用，什么脏活累活，自动化任务都可以交给它。
 
 随着现在云计算普及，5-6个人的小团队都会有好几台后台服务器，Linux上那套用户权限管理感觉太多余了，直接root操作多爽。
 
@@ -19,6 +19,20 @@ sudo chmod +x /usr/local/bin/gitlab-runner
 
 sudo gitlab-runner install --user=root --working-directory=/home/gitlab-runner # 官方文档还是user=gitlab-runner
 sudo gitlab-runner start
+```
+
+## 修改Gitlab-Runner的默认用户(gitlab-runner) 为root
+```bash
+sudo gitlab-runner uninstall # 先卸载
+sudo gitlab-runner install --working-directory /home/gitlab-runner --user root  #  改为root重新安装
+sudo gitlab-runner restart  # 重启
+```
+
+方法1： 适用于centos
+```bash 
+cat /etc/systemd/system/gitlab-runner.service #  把 "--user" 改为 "--user" "root"
+systemctl daemon-reload
+systemctl restart gitlab-runner
 ```
 # 注册runner
 

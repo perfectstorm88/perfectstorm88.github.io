@@ -57,7 +57,7 @@ esSparkConf.setIfMissing("spark.driver.host", "MAC_OS_LAN_IP");
 esSparkConf.setIfMissing("spark.driver.bindAddress", "0.0.0.0");
 esSparkConf.setIfMissing("spark.blockManager.port", "6060");
 ```
-#
+## 
 ```bash
 docker run -v `pwd`:/tmp -it \
 -p 20002:20002 \

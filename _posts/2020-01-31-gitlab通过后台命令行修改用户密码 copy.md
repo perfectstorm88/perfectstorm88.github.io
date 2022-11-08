@@ -31,7 +31,10 @@ categories: 系统管理 gitlab
 6.退出控制台, 然后尝试使用新密码登录。
 
 
+
+
 # 参考
 
 - [Gitlab 重置 root 密码](https://www.cnblogs.com/kelsen/p/11167682.html)
 - [gitlab修改root用户密码](https://www.cnblogs.com/rhca/p/10646641.html)
+

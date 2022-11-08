@@ -5,7 +5,7 @@ categories: python
 
 
 # 操作步骤
-- 下载SimHei.tff
+- 下载SimHei.tff `wget --no-check-certificate https://github.com/StellarCN/scp_zh/blob/master/fonts/SimHei.ttf`
 - 复制中文字体文件到matplotlib的fonts/ttf目录。完整的目录为/usr/local/lib/python*/dist-packages/matplotlib/mpl-data/fonts/ttf
 - 修改配置/usr/local/lib/python*/dist-packages/matplotlib/mpl-data/matplotlibrc文件
 ```
